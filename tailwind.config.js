@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'catamaran': ['Catamaran', 'sans-serif']
-      },
+        'catamaran': ['Catamaran', 'Helvetica', 'sans-serif']
+      }
     },
   },
   variants: {},

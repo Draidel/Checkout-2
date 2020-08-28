@@ -1,15 +1,22 @@
 {
-  "name": "Checkout",
+  "name": "checkout-2",
   "version": "1.0.0",
-  "description": "",
-  "main": "tailwind.js",
+  "description": "Hola, esto es mi segundo readme.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Draidel/Checkout-2.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Draidel/Checkout-2/issues"
+  },
+  "homepage": "https://github.com/Draidel/Checkout-2#readme",
   "dependencies": {
-    "tailwindcss": "^1.7.3"
+    "tailwindcss": "^1.7.5"
   }
 }
