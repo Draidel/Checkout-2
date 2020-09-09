@@ -5,38 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/tailwind.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <title>Checkout</title>
 </head>
 <body class=" font-catamaran"> 
-
-    <div class="flex flex-row h-screen">
+    <div class="flex md:flex-row flex-col h-screen">
         <!-- LEFT COLUMN -->    
-        <div class="w-7/12 p-8 pt-4">
-        
+        <div class="md:w-7/12 w-full p-8 pt-4">
             <!-- HEADER -->    
             <div class="flex items-center container border-b mb-6 pb-6 h-24">
                 <div class="w-2/12 mb-4"><img src="assets/carita.png" alt="logo"></div>
                 <div class="w-10/12 text-left text-happy-dark-grey text-happy-h1 font-bold">Checkout</div>
             </div>
-            
             <!-- ITEMS HEADER  -->
-            <div class="flex mt-4 text-xs border-b">
+            <div class="flex mt-4 text-xs">
                 <div class="w-3/6">
-
-                    <!-- ITEM  -->
-                    <div class="flex mt-6 pt-5 pb-4 text-left space-x-8">
-                        <div class="my-auto flex-initial"><img src="assets/cruz.svg" alt="remove"></div>
-                        <div class="my-auto mx-4 flex-initial"><img class="rounded-full" src="https://via.placeholder.com/54" alt="img"></div>
-                        <div class="my-auto font-semibold text-base flex-initial hover:text-pink-500">Product Name</div>
-                    </div>
                 </div>
                 <div class="w-2/6 text-gray-500">Details</div>
                 <div class="w-1/6 text-gray-500">Price</div>
             </div>
+            <!-- ITEM  -->
+            <div class="flex mt-4 text-xs border-b items-center">
+                <div class="mt-6 flex w-3/6 pb-4 text-left md:space-x-8">
+                    <div class="my-auto flex-initial"><img src="assets/cruz.svg" alt="remove"></div>
+                    <div class="my-auto mx-4 flex-initial"><img class="rounded-full" src="https://via.placeholder.com/54" alt="img"></div>
+                    <div class="my-auto font-semibold text-base flex-initial hover:text-pink-500">Product Name</div>
+                </div>   
+                <div class="w-2/6 text-happy-light-grey text-base">
+                    Description
+                </div>
+                <div class="w-1/6 text-happy-dark-grey font-bold text-base">
+                    $300
+                </div>
+            </div>
+            <!-- ITEM  -->
+            <div class="flex mt-4 text-xs border-b items-center">
+                <div class="mt-6 flex w-3/6 pb-4 text-left md:space-x-8">
+                    <div class="my-auto flex-initial"><img src="assets/cruz.svg" alt="remove"></div>
+                    <div class="my-auto mx-4 flex-initial"><img class="rounded-full" src="https://via.placeholder.com/54" alt="img"></div>
+                    <div class="my-auto font-semibold text-base flex-initial hover:text-pink-500">Product Name</div>
+                </div>   
+                <div class="w-2/6 text-happy-light-grey text-base">
+                    Description
+                </div>
+                <div class="w-1/6 text-happy-dark-grey font-bold text-base">
+                    $300
+                </div>
+            </div>
+            <!-- ITEM  -->
+            <div class="flex mt-4 text-xs border-b items-center">
+                <div class="mt-6 flex w-3/6 pb-4 text-left md:space-x-8">
+                    <div class="my-auto flex-initial"><img src="assets/cruz.svg" alt="remove"></div>
+                    <div class="my-auto mx-4 flex-initial"><img class="rounded-full" src="https://via.placeholder.com/54" alt="img"></div>
+                    <div class="my-auto font-semibold text-base flex-initial hover:text-pink-500">Product Name</div>
+                </div>   
+                <div class="w-2/6 text-happy-light-grey text-base">
+                    Description
+                </div>
+                <div class="w-1/6 text-happy-dark-grey font-bold text-base">
+                    $300
+                </div>
+            </div>
         </div>
         <!-- RIGHT COLUMN -->
-        <div class="flex w-5/12 bg-happy-dark-grey flex-col justify-between">
+        <div class="flex md:w-5/12 w-full bg-happy-dark-grey flex-col justify-between">
             <div class="flex flex-col p-8">
                 <!-- HEADER -->
                 <div class="flex items-center container border-b border-happy-light-grey mb-6 pb-6 h-24">
@@ -57,21 +88,20 @@
                     <form class="w-full bg-transparent" action="">
                         <div class="flex flex-col">
                             <div class="">
-                                <input class=" w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom" type="text" placeholder="Name">
+                                <input class=" w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom my-4" type="text" placeholder="Name">
                             </div>
                             <div class="flex">
-                                <div class="w-1/2">
-                                    <input class="w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom" type="number" placeholder="Card Number">
+                                <div class="w-1/2 pr-2">
+                                    <input class="w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom my-4" type="number" placeholder="Card Number">
                                 </div>
-                                <div class="w-1/2">
-                                    <input class="w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom" type="date" placeholder="Exp. Date">
+                                <div class="w-1/2 pl-2">
+                                    <input class="w-full bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom my-4" type="date" placeholder="Exp. Date">
                                 </div>
                             </div>
-                            <input class="bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom" type="number" placeholder="CVC">
+                            <input class="bg-transparent text-white border-b border-happy-light-grey placeholder-happy-light-grey focus:outline-none p-2 object-bottom my-4 w-1/4" type="number" placeholder="CVC">
                         </div>
                     </form>
                 </div>
-
             </div>
             <div>
                 <div class="flex align-bottom h-full items-end">
